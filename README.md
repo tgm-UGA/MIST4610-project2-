@@ -31,29 +31,38 @@ Together, these allow for clearer insights into property desirability, valuation
 ### Dashboard 1 Screenshot
 (Insert dashboard 1 image here)
 
+## Visual 1 Visual 1 — Statewide Median Sale Price (Scorecard)
+![Dash 1 Vis 1](https://raw.githubusercontent.com/ak87319/MIST4610-project2-/b96df1481d3ae12a07e4b709bcdcf027c37dad0f/Dash%201%20Vis%201.png)
+
 This visualization provides the statewide median sale price for all Connecticut real estate transactions and serves as the foundational benchmark for evaluating local markets. By establishing this statewide reference value, we can meaningfully compare how individual towns perform relative to the average property sale price across the entire state. A town’s position above or below this value helps identify whether the local market is considered high-value, average, or lower-value. High-value areas typically reflect strong buyer demand, higher-income populations, and competitive housing markets, while towns below the median may offer more affordability or reflect slower economic growth. Understanding this statewide benchmark is crucial for all visualizations that follow, as it allows us to contextualize which towns outperform or underperform the statewide housing market.
 
 ## Visual 2 — Statewide Median Assessed Value (Scorecard)
-(Insert dashboard 2 image here)
+[(Insert dashboard 2 image here)
+](https://raw.githubusercontent.com/ak87319/MIST4610-project2-/b96df1481d3ae12a07e4b709bcdcf027c37dad0f/Dash%201%20Vis%202.png
+)
 
 This visualization displays the statewide median assessed value assigned by municipalities for tax purposes. Comparing statewide assessed values to statewide sale prices is essential for determining whether Connecticut property assessments are generally aligned with the market. If assessed values fall well below sale values statewide, this suggests widespread undervaluation, which can have implications for municipal revenue and taxation fairness. Conversely, a close alignment signals strong valuation accuracy. This visualization forms the baseline for understanding valuation differences across towns later in the dashboard. It is also the foundation for studying property tax fairness and identifying regions where assessments lag behind market conditions, potentially requiring reassessment.
 
 ## Visual 3 — Median Sale Value by Town (Bar Chart)
-(insert dashboard 3 image here)
+[(insert dashboard 3 image here)
+](https://raw.githubusercontent.com/ak87319/MIST4610-project2-/b96df1481d3ae12a07e4b709bcdcf027c37dad0f/Dash%201%20Vis%203.png
+)
 
 This visualization ranks each town by its median sale price, revealing which areas have the highest and lowest property markets. Towns such as Greenwich, Darien, and New Canaan clearly emerge as the strongest markets, with substantially higher median sale prices than most other towns. These high-value towns exhibit strong demand, often linked to affluent populations, competitive school districts, higher incomes, and limited housing supply. On the opposite end, towns with lower sale medians reflect more affordable living, possibly due to lower demand, more available housing stock, or weaker local economic conditions. This visualization helps identify geographic housing disparities, highlighting how wealth and property value concentrate in certain communities while others remain more affordable. It also sets the stage for analyzing how these value levels relate to assessed values and year-to-year trends in subsequent visualizations.
 
 ## Visual 4 — Difference Between Median Sale and Median Assessed Value by Town
-(insert image 4 here)
+![Dash 1 Vis 4](https://raw.githubusercontent.com/ak87319/MIST4610-project2-/b96df1481d3ae12a07e4b709bcdcf027c37dad0f/Dash%201%20vis%204.png)
 
 This visualization highlights the gap between each town’s median sale price and its median assessed value. Towns with very large positive gaps—such as Darien, New Canaan, and Greenwich—show that properties consistently sell for much more than towns assess them for. This indicates strong demand combined with potentially outdated assessments. The result is an undervaluation pattern that affects tax fairness and municipal revenue. Towns with smaller gaps or near-zero differences demonstrate more accurate assessments aligned with market behavior. This visualization is critical because it uncovers where valuation inaccuracies are most significant and which markets are hottest relative to their assessed worth. Buyers may find better deals in towns with smaller gaps, while municipalities with large gaps may need to update assessments to maintain tax fairness and revenue stability. Investors can also use this information to identify markets where real property value far exceeds tax valuation.
 
 ## Visual 5 — Statewide Median Sale Value Over Time (Line Chart)
-(insert image here)
+![Dash 1 Vis 5](https://raw.githubusercontent.com/ak87319/MIST4610-project2-/b96df1481d3ae12a07e4b709bcdcf027c37dad0f/Dash%201%20vis%205.png)
 
 This line chart tracks the statewide median sale price across all years in the dataset, revealing Connecticut’s broader housing market trajectory. A consistently rising line indicates strong appreciation, meaning homes across the state are increasing in value over time. Periods of stagnation or decline may correspond to economic events, policy changes, or shifts in buyer preferences. This visualization is important because it establishes the statewide trend that individual towns can be compared against. Towns growing faster than the statewide trend are increasing in desirability or market pressure, while towns growing slower may be facing stagnation. Understanding the statewide context allows us to interpret whether local town trends represent strong outperformance, normal movement, or weaker demand.
 
 ## Visual 6 — Heatgrid of Median Sale Value by Town and Year
+![Dash 1 Vis 6](https://raw.githubusercontent.com/ak87319/MIST4610-project2-/b96df1481d3ae12a07e4b709bcdcf027c37dad0f/Dash%201%20vis%206.png)
+
 This heatgrid visualizes median sale values for each town across each year, with darker colors representing higher sale values. It is one of the most powerful visuals because it shows both cross-town variation and year-to-year market changes simultaneously. Towns with consistently dark shading represent stable high-value markets. Towns that darken over time represent emerging markets experiencing rapid appreciation. Meanwhile, towns with lighter or inconsistent colors reflect more affordable markets or fluctuating demand. This visualization clearly identifies patterns such as which towns are booming, which are stable, and which may be declining. It allows investors, policymakers, and analysts to spot long-term housing trends, identify emerging hot markets, and detect regions where property values have remained stagnant.
 
 # 📊 DASHBOARD 2 — Property Type & Assessment Accuracy (5 Visuals)
