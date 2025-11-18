@@ -1,0 +1,84 @@
+# SQL Codes 
+
+# Question #1
+
+## Visual 1 
+SELECT MEDIAN(SALE_AMOUNT) AS statewide_median_sale
+FROM REALESTATE_TABLE; 
+
+## Visual 2 
+SELECT MEDIAN(ASSESSED_VALUE) AS statewide_median_assessed
+FROM REALESTATE_TABLE;
+
+## Visual 3 
+SELECT TOWN, MEDIAN(SALE_AMOUNT) AS town_median_sale
+FROM REALESTATE_TABLE
+GROUP BY TOWN
+ORDER BY town_median_sale DESC;
+
+## Visual 4
+SELECT TOWN,
+MEDIAN(SALE_AMOUNT) - MEDIAN(ASSESSED_VALUE) AS median_value_difference
+FROM REALESTATE_TABLE
+GROUP BY TOWN
+ORDER BY median_value_difference DESC;
+
+## Visual 5
+SELECT SOLD_YR, MEDIAN(SALE_AMOUNT) AS statewide_median_sale
+FROM REALESTATE_TABLE
+GROUP BY SOLD_YR
+ORDER BY SOLD_YR;
+
+
+## Visual 6 
+SELECT TOWN, SOLD_YR,
+MEDIAN(SALE_AMOUNT) AS median_sale
+FROM REALESTATE_TABLE
+GROUP BY TOWN, SOLD_YR
+ORDER BY TOWN, SOLD_YR;
+
+# Question 2 
+
+
+## Visual 1
+SELECT RESIDENTIAL_TYPE, COUNT(*) AS num_sales
+FROM REALESTATE_TABLE
+WHERE PROPERTY_TYPE = 'Residential'
+GROUP BY RESIDENTIAL_TYPE
+ORDER BY num_sales DESC;
+
+
+## Visual 2
+SELECT PROPERTY_TYPE, MEDIAN(SR_dec) AS median_sales_ratio
+FROM REALESTATE_TABLE
+GROUP BY PROPERTY_TYPE
+ORDER BY median_sales_ratio DESC;
+
+
+## Visual 3
+SELECT TOWN, SOLD_YR,MEDIAN(SR_dec) AS median_ratio
+FROM REALESTATE_TABLE
+GROUP BY TOWN, SOLD_YR
+ORDER BY TOWN, SOLD_YR;
+
+
+## Visual 4
+SELECT TOWN, MEDIAN(ASSESSED_VALUE) AS median_assessed, 
+MEDIAN(SALE_AMOUNT) AS median_sale
+FROM REALESTATE_TABLE
+WHERE TOWN NOT IN ('***Unknown***', 'Unknown', 'Other', '')
+GROUP BY TOWN
+ORDER BY TOWN;
+
+
+## Visual 5
+SELECT SOLD_YR, PROPERTY_TYPE, MEDIAN(SR_dec) AS median_sales_ratio
+FROM REALESTATE_TABLE
+WHERE PROPERTY_TYPE IN ('Single Family', 'Two Family', 'Three Family',
+'Four Family', 'Condo', 'Commercial', 'Vacant Land', 'Public Utility',
+'Apartments')
+GROUP BY SOLD_YR, PROPERTY_TYPE
+ORDER BY SOLD_YR, PROPERTY_TYPE;
+
+
+
